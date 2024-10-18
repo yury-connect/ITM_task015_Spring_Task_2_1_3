@@ -12,19 +12,17 @@ public class AnimalsCage {
     private Animal animal;
 
     @Autowired
-    private Timer timer; // Добавляю поле   /   Внедрение бина Timer через Spring
+    private Timer timer;
 
 
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
         System.out.println("At:");
-//        System.out.println(new Timer().getTime()); // Так было в задании, изменяю на строчку ниже
         System.out.println(timer.getTime());
         System.out.println("________________________");
     }
 
-    // Возврат добавленного поля   /   бина Timer
     public Timer getTimer() {
         return timer;
     }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 Аннотация @Component уже регистрирует его в контексте Spring как бин,
 поэтому достаточно использовать внедрение зависимостей (@Autowired), чтобы получить экземпляр Timer.
  */
-@Component // Превращаем Timer в такой-же компонент
+@Component
 public class Timer {
 
     private Long nanoTime = System.nanoTime();
